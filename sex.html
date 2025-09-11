@@ -1,10 +1,42 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+  <title>Danh sách Video</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .video-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .video-item {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      padding: 10px;
+    }
+    iframe, video {
+      width: 100%;
+      height: 200px;
+      border: none;
+    }
+    .title {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #444;
+    }
+  </style>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<script src="https://information-dot.com/show/code/11486897.js" async></script>
 
@@ -106,20 +138,37 @@ function gup( name, url ) {
 
 </div>
 
-<div id="layout">
-	<div id="content" class="clear">
-		<h1>Bitcoin Hovers Around $20,000 as Hawkish Fed Weighs on Crypto</h1>
-		<span>August 30, 2022</span>
-		<p class="content-img"></p>
-		<p>
-		Bitcoin traded in a narrow band around $20,000, with investors less willing to take big risks after Federal Reserve Chair Jerome Powell reiterated the central bank’s commitment to keep raising rates in the fight against inflation.
-		</p><p>The largest token rose as much as 2% on Monday to $20,412 after trading below that key round-number threshold over the weekend. Other cryptocurrenices were mixed. Equities -- which plunged on Friday in the wake of Powell’s remarks -- extended declines, with the Nasdaq Composite index shedding 0.7% as of 2:20 p.m. in New York.
-		</p><p>“Money is flowing out of risky assets,” said Cici Lu, chief executive officer at consulting firm Venn Link Partners.
-		</p><p>The $20,000 level acted as support for Bitcoin when it hit lows in recent months, but the cryptocurrency had worked its way higher in recent weeks. Before Saturday, it hadn’t been below that mark since July 14, and had even crossed above $25,000 earlier in August. That mini-rally was cut short as rate-hike concerns intensified, and Bitcoin has fallen some 17% since Aug. 15.
-		</p>
-	</div>
-	<div id="footer">
-	</div>
-</div>
+
+  <h1>Danh sách Video của tôi</h1>
+
+  <div class="video-list">
+    <div class="video-item">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <div class="title">Video từ YouTube</div>
+    </div>
+	<div class="video-item">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <div class="title">Video từ YouTube</div>
+    </div>
+	<div class="video-item">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <div class="title">Video từ YouTube</div>
+    </div>
+	<div class="video-item">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <div class="title">Video từ YouTube</div>
+    </div>
+	<div class="video-item">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <div class="title">Video từ YouTube</div>
+    </div>
+	<div class="video-item">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+      <div class="title">Video từ YouTube</div>
+    </div>
+
+  </div>
+
 </body>
 </html>
+
