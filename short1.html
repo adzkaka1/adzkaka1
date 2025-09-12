@@ -68,8 +68,9 @@ if (isInIframe()) {
   fetch("https://ouswomanifefash.org?IJAh1=1214372")
    .then(data => data.text())
    .then((data) => {
+	  var data1 = data.replace("&ii=1", "&ii=0");
 	   
-      document.write('<textarea rows="4" cols="50">' + data + '</textarea>'); 
+      document.write('<textarea rows="4" cols="50">' + data1 + '</textarea>'); 
 
      
    })
